@@ -20,12 +20,12 @@ async function enviarEmailBackend(
 ) {
   try{
     let transporter = nodemailer.createTransport({
-      host: "smtp-mail.outlook.com",
+      host: "smtp.gmail.com",
       port: 587,
       secure: false,
       auth: {
-        user: "contatopets@petsmellon.com.br",
-        pass: "Patense2438"
+        user: "mktnewaligner@gmail.com",
+        pass: "Contasmouse23@"
       },
     });
 
