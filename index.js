@@ -17,13 +17,13 @@ async function enviarEmailBackend(nome, email, telefone) {
       port: 587,
       secure: false,
       auth: {
-        user: process.env.EMAIL_USER, // Use variável de ambiente para o usuário do e-mail
-        pass: process.env.EMAIL_PASS // Use variável de ambiente para a senha do e-mail
+        user: 'mktnewaligner@gmail.com', // Use variável de ambiente para o usuário do e-mail
+        pass: 'Contasmouse23@' // Use variável de ambiente para a senha do e-mail
       },
     });
 
     let info = await transporter.sendMail({
-      from: process.env.EMAIL_USER, // Use o mesmo usuário do e-mail como remetente
+      from: 'mktnewaligner@gmail.co', // Use o mesmo usuário do e-mail como remetente
       to: "matheustxr.profissional@gmail.com",
       subject: "Quero ser um credenciado New Aligner",
       html: `<p>Nome: ${nome}</p>
