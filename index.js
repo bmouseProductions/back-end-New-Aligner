@@ -30,7 +30,7 @@ async function enviarEmailBackend(
     });
 
     let info = await transporter.sendMail({
-      from: "contatopets@petsmellon.com.br",
+      from: "mktnewaligner@gmail.com",
       to: "matheustxr.profissional@gmail.com",
       subject: "Quero Ser Um Revendedor Zoomies",
       html: `<p>Nome: ${nome}</p>
