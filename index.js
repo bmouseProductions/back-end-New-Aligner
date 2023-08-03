@@ -19,18 +19,13 @@ async function enviarEmailBackend(
 ) {
   try {
     let transporter = nodemailer.createTransport({
-      /*host: 'smtp.gmail.com',
+      host: 'smtp.gmail.com',
       port: 587,
       secure: false,
       auth: {
         user: 'mktnewaligner@gmail.com',
         pass: 'Contasmouse23@',
-      },*/
-      service: 'gmail',
-      auth: {
-        user: 'mktnewaligner@gmail.com',
-        pass: 'Contasmouse23@'
-      }
+      },
     });
 
     let info = await transporter.sendMail({
