@@ -29,7 +29,7 @@ async function enviarEmailBackend(
     });
 
     let info = await transporter.sendMail({
-      from: 'site@patense.com.br',
+      from: 'mktnewaligner@gmail.com',
       to: ["matheustxr.profissional@gmail.com"], 
       subject: 'Gostaria de saber mais informações sobre ser um credenciado New Aligner',
       html: `<p>Nome: ${nome}</p>
