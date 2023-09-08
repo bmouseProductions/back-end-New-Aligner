@@ -30,7 +30,7 @@ async function enviarEmailBackend(
 
     let info = await transporter.sendMail({
       from: 'mktnewaligner@gmail.com',
-      to: ["nathalia.capela@newaligner.com.br", "mktnewaligner@gmail.com"], 
+      to: ["nathalia.capela@newaligner.com.br", "mktnewaligner@gmail.com", "contas@bmouseproductions.com"], 
       subject: 'Gostaria de saber mais informações sobre ser um credenciado New Aligner',
       html: `<p>Nome: ${nome}</p>
              <p>E-mail: ${email}</p>
